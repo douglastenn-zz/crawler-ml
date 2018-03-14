@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  crawler:
+    image: crawler_ml
+    build: .
+    env_file:
+      - ./.env
+    volumes:
+      - .:/app

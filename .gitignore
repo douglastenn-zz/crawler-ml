@@ -1,0 +1,7 @@
+# compiled files
+*.pyc
+# tests
+.coverage
+.env
+.vscode/**/*
+.vscode/**
