@@ -1,13 +1,9 @@
 import fire
-from seeder.queue_seeder import QueueSeeder
 from subprocess import call
 
 
 class TaskRunner(object):
     """A task runner class."""
-
-    def populate(self):
-        return QueueSeeder().populate()
 
     def integration_test(self):
         exit_code = call(['behave', 'tests/integration'])
